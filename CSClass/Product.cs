@@ -2,8 +2,12 @@
 {
     internal class Product
     {
-        public Product()
+        public string name = "No name";
+        public int price = 0;
+
+        public override string ToString()
         {
+            return this.name + " : " + this.price;
         }
     }
 }

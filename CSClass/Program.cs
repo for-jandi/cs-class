@@ -19,7 +19,7 @@ namespace CSClass
             Console.WriteLine(random.Next(10, 100));
             Console.WriteLine(random.Next(10, 100));
             Console.WriteLine(random.Next(10, 100));
-            
+
             Console.WriteLine(random.NextDouble());
             Console.WriteLine(random.NextDouble());
             Console.WriteLine(random.NextDouble());
@@ -32,20 +32,42 @@ namespace CSClass
             list.Add(3);
             list.Add(4);
 
-            foreach(var item in list)
+            foreach (var item in list)
             {
                 Console.WriteLine("count : " + list.Count + "\t" + item);
             }
 
             Console.WriteLine(Math.Abs(-5555));
             Console.WriteLine(Math.Ceiling(52.3333));
-            Console.WriteLine(Math.Floor(52.3333)); 
+            Console.WriteLine(Math.Floor(52.3333));
             Console.WriteLine(Math.Round(52.3333));
             Console.WriteLine(Math.Max(52.3333, 7));
             Console.WriteLine(Math.Min(52.3333, 7));
             Console.WriteLine(Math.PI);
 
-            Product product = new Product();
+            /*            Product product = new Product();
+                        product.name = "감자";
+                        product.price = 6000;*/
+
+            Product product1 = new Product()
+            {
+                name = "감자",
+                price = 6000
+            };
+            Product product2 = new Product()
+            {
+                price = 6000,
+                name = "감자"
+                
+            };
+            Product product3 = new Product()
+            {
+                name = "감자"
+            };
+
+            Console.WriteLine(product1);
+            Console.WriteLine(product2);
+            Console.WriteLine(product3);
         }
     }
     class Car
