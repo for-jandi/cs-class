@@ -25,6 +25,17 @@ namespace CSClass
             Console.WriteLine(random.NextDouble());
             Console.WriteLine(random.NextDouble());
             Console.WriteLine(random.NextDouble());
+
+            List<int> list = new List<int>();
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.Add(4);
+
+            foreach(var item in list)
+            {
+                Console.WriteLine("count : " + list.Count + "\t" + item);
+            }
         }
     }
     class Car
