@@ -36,6 +36,16 @@ namespace CSClass
             {
                 Console.WriteLine("count : " + list.Count + "\t" + item);
             }
+
+            Console.WriteLine(Math.Abs(-5555));
+            Console.WriteLine(Math.Ceiling(52.3333));
+            Console.WriteLine(Math.Floor(52.3333)); 
+            Console.WriteLine(Math.Round(52.3333));
+            Console.WriteLine(Math.Max(52.3333, 7));
+            Console.WriteLine(Math.Min(52.3333, 7));
+            Console.WriteLine(Math.PI);
+
+            Product product = new Product();
         }
     }
     class Car
