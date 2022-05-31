@@ -58,7 +58,7 @@ namespace CSClass
             {
                 price = 6000,
                 name = "감자"
-                
+
             };
             Product product3 = new Product()
             {
@@ -68,6 +68,70 @@ namespace CSClass
             Console.WriteLine(product1);
             Console.WriteLine(product2);
             Console.WriteLine(product3);
+
+            List<Student> students = new List<Student>();
+            students.Add(new Student()
+            {
+                name = "이민지",
+                grade = 100
+            });
+            students.Add(new Student()
+            {
+                name = "가연우",
+                grade = 60
+            });
+            students.Add(new Student()
+            {
+                name = "김유나",
+                grade = 100
+            });
+            students.Add(new Student()
+            {
+                name = "김유진",
+                grade = 89
+            });
+            students.Add(new Student()
+            {
+                name = "김하진",
+                grade = 80
+            });
+            students.Add(new Student()
+            {
+                name = "심이진",
+                grade = 22
+            });
+            students.Add(new Student()
+            {
+                name = "유예영",
+                grade = 56
+            });
+            /*foreach (var item in students)
+            {
+                if(item.grade > 60)
+                    students.RemoveAt(item); 
+            }
+            */
+
+
+            /*            for(int i = 0; i < students.Count; i++)
+                        {
+                            if (students[i].grade > 60)
+                            {
+                                students.RemoveAt(i);
+                                i--;
+                            }
+                        }*/
+            for (int i = students.Count - 1; i >= 0; i--)
+            {
+                if (students[i].grade > 60)
+                {
+                    students.RemoveAt(i);
+                }
+            }
+            foreach (var item in students)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
     class Car
