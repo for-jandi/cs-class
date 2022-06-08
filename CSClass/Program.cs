@@ -147,6 +147,12 @@ namespace CSClass
             Console.WriteLine(Product.counter + "개가 생성되었습니다.");
 
             SingleTon mySingle = SingleTon.getInstance();
+            Console.WriteLine("첫번째 위치");
+            sampleClass sample = new sampleClass();
+            Console.WriteLine("두번째 위치");
+            Console.WriteLine(sampleClass.value);
+            Console.WriteLine("세번째 위치");
+            Console.WriteLine(sampleClass.value);
         }
     }
     class Car

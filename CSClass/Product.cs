@@ -7,6 +7,10 @@
         public int price = 0;
         private int id = -1;
 
+        public Product()
+        {
+        }
+
         public Product(string name, int price)
         {
             this.id = counter++;

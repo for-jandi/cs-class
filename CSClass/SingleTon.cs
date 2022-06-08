@@ -9,7 +9,7 @@ namespace CSClass
         {
 
         }
-        static SingleTon getInstance()
+        public static SingleTon getInstance()
         {
             if(instance == null)
             {
