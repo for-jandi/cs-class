@@ -8,6 +8,8 @@ namespace CSClass
 {
     internal class Program
     {
+        private static object productA;
+
         static void Main(string[] args)
         {
             Car car = new Car();
@@ -153,7 +155,15 @@ namespace CSClass
             Console.WriteLine(sampleClass.value);
             Console.WriteLine("세번째 위치");
             Console.WriteLine(sampleClass.value);
+
+            Product product = new Product("과자", 1500);
+            productA = null;
+            Box box = new Box(10, 20);
+            Console.WriteLine(box.getArea());
+
+
         }
+        
     }
     class Car
     {
