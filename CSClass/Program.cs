@@ -161,7 +161,11 @@ namespace CSClass
             Box box = new Box(10, 20);
             Console.WriteLine(box.getArea());
 
-
+            Fibonacci fibo = new Fibonacci();
+            Console.WriteLine(fibo.Get(1));
+            Console.WriteLine(fibo.Get(50));
+            Console.WriteLine(fibo.Get(100));
+            Console.WriteLine(fibo.Get(1000));
         }
         
     }
