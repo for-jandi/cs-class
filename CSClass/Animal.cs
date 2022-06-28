@@ -13,5 +13,9 @@ namespace CSClass
         {
             Console.WriteLine("냠냠");
         }
+        public void Sleep()
+        {
+            Console.WriteLine("쿨쿨");
+        }
     }
 }

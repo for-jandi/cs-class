@@ -12,10 +12,6 @@ namespace CSClass
         public Dog()
         {
         }
-        public void Sleep()
-        {
-            Console.WriteLine("쿨쿨");
-        }
         public void Bark()
         {
             Console.WriteLine("멍멍");

@@ -12,9 +12,9 @@ namespace CSClass
         public Cat()
         {
         }
-        public void Sleep()
+        public void Meow()
         {
-            Console.WriteLine("쿨쿨");
+            Console.WriteLine("냐옹");
         }
     }
 }

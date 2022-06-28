@@ -166,6 +166,24 @@ namespace CSClass
             Console.WriteLine(fibo.Get(50));
             Console.WriteLine(fibo.Get(100));
             Console.WriteLine(fibo.Get(1000));
+
+            List<Dog> dogList = new List<Dog>() { new Dog(), new Dog(), new Dog()};
+            List<Cat> catList = new List<Cat>() { new Cat(), new Cat(),new Cat()};
+            List<Animal> animalList = new List<Animal>() { new Dog(), new Dog(), new Dog() , new Cat(), new Cat(), new Cat() };
+            foreach(var item in animalList)
+            {
+                item.Eat();
+                item.Sleep();
+                if (item is Dog) ((Dog)item).Bark();
+                else if (item is Cat) ((Cat)item).Meow();
+
+                var dog = item as Dog;
+                if(dog != null) { dog.Bark(); }
+                var cat = item as Cat;
+                if(cat != null) { cat.Meow(); }
+            }
+            Child childA = new Child();
+            Child childB = new childA("string");
         }
         
     }
