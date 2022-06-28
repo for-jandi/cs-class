@@ -183,7 +183,16 @@ namespace CSClass
                 if(cat != null) { cat.Meow(); }
             }
             Child childA = new Child();
-            Child childB = new childA("string");
+            Child childB = new Child("string");
+
+            // Shadowing
+            int number = 20;
+            Console.WriteLine(number); 
+
+            foreach(var item in animalList)
+            {
+                item.Eat();
+            }
         }
         
     }

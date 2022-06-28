@@ -4,7 +4,15 @@ namespace CSClass
 {
     public class Child : Parent
     {
-
+        public new string variable = "shadowing";
+        public new void Method()
+        {
+            Console.WriteLine("자식의 메소드");
+        }
+        public virtual void Method2()
+        {
+            Console.WriteLine("자식의 메소드");
+        }
         public Child() : base(10)
         {
             Console.WriteLine("Child() : base(10)");

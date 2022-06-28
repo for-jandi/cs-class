@@ -9,6 +9,10 @@ namespace CSClass
     internal class Dog : Animal
     {
         string Color;
+        public new void Eat()
+        {
+            Console.WriteLine("강아지가 우걱우걱 먹어요");
+        }
         public Dog()
         {
         }
